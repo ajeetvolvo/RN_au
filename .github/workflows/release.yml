@@ -17,7 +17,6 @@ jobs:
         uses: actions/setup-node@v1
       - name: Add plugin for conventional commits
         run: npm install conventional-changelog-conventionalcommits
-      - run: cat package.json
       - name: Release to GitHub
         env:
           GITHUB_TOKEN: ${{ secrets.GH_TOKEN }}
